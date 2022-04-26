@@ -1,0 +1,152 @@
+@import 'variables';
+
+@mixin defaultValues{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    width: 794px;
+    height: 1123px;
+}
+
+@mixin principal{
+    display:inline-block;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    border:1px solid black;
+}
+
+@mixin lateral{
+    padding:3%;
+    display:flex;
+    flex-direction: column;
+    background-color: $bgColorHeader;
+    flex-grow: 1;
+}
+@mixin imgPerfil {
+    width: 90%;
+    height: 200px;
+    margin: 5%;
+}
+@mixin titles {
+    color: $fontColorTitle;
+    font-weight: $fontWeightTitle;
+    font-size: $fontSizeTitle;
+}
+@mixin contentLateral {
+    color: $fontColorContent;
+    font-weight: $fontWeightRegular;
+    font-size: $fontSizeRegular;
+}
+@mixin line {
+    border: $lineForm;
+}
+@mixin bars {
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+@mixin progress-bar{
+    color: white;
+    background-color: green;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+@mixin progress($percentage){
+    width:$percentage;
+}
+
+@mixin timeline {
+    border-left: 2px solid #08283C;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin: 20px auto;
+    position: relative;
+    padding: 0px 30px;
+    list-style: none;
+    text-align: left;
+  }
+@mixin event {
+    border-bottom: 1px dashed grey;
+    padding-bottom: 5px;
+    position: relative;
+    margin-bottom: 5px;
+  
+    &:last-of-type{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+    &:before, &:after{
+        position: absolute;
+        display: block;
+        top:0;
+    }
+    &:before{
+        left:-90px;
+        content:attr(data-date);
+        text-align: right;
+    }
+    &:after{
+        content:'';
+        left: -39px;
+        height:15px;
+        width:15px;
+        top:5px;
+        border-radius: 50%;
+        top: 5px;
+        background:$bgColorLateral;
+
+    }
+
+}
+
+  @mixin item{
+    margin:20px;
+    width:80px;
+    height:80px;
+    border:2px dashed black;
+    position:relative;
+    
+   &:after{
+    
+    content:'Insert a image here.';
+   }
+}  
+
+@mixin bodyCV{
+    display:flex;
+    flex-direction: column;
+    width: 66%;
+    height: 100%;
+    background-color: white;
+    padding:10px;
+}
+
+@mixin header {
+    background-color: $bgColorHeader;
+    text-align: center;
+    
+}
+
+@mixin footer {
+    background-color: $bgColorHeader;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+@mixin item {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border: 2px dashed black;
+    position: relative;   
+    &::after{
+        content:'Insert a image, here'
+    } 
+}

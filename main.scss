@@ -1,0 +1,60 @@
+@import 'functions';
+
+body{
+    @include defaultValues;
+}
+
+.principal{
+    @include principal;
+}
+
+.lateral{
+    @include lateral;
+}
+.imgPerfil{
+    @include imgPerfil;
+}
+.titles{
+    @include titles;
+}
+.contentLateral{
+    @include contentLateral;
+}
+.line{
+    @include line;
+}
+
+.bars{
+    @include bars;
+}
+.progress-bar{
+    @include progress-bar;
+}
+.spanish{
+    @include progress(100%);
+}
+.english{
+    @include progress(80%);
+}
+
+
+.bodyCV{
+    @include bodyCV;
+}
+
+.timeline{
+    @include timeline; 
+}
+
+.event{
+    @include event;
+}
+.header{
+    @include header;
+}
+.item{
+    @include item;
+}
+.footer{
+    @include footer;
+}

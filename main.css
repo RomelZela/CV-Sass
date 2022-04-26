@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 794px;
+  height: 1123px;
+}
+
+.principal {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.lateral {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  background-color: #738EA0;
+  flex-grow: 1;
+}
+
+.imgPerfil {
+  width: 90%;
+  height: 200px;
+  margin: 5%;
+}
+
+.titles {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contentLateral {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.line {
+  border: 2px solid #08283C;
+}
+
+.bars {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  color: white;
+  background-color: green;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.spanish {
+  width: 100%;
+}
+
+.english {
+  width: 80%;
+}
+
+.bodyCV {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  height: 100%;
+  background-color: white;
+  padding: 10px;
+}
+
+.timeline {
+  border-left: 2px solid #08283C;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin: 20px auto;
+  position: relative;
+  padding: 0px 30px;
+  list-style: none;
+  text-align: left;
+}
+
+.event {
+  border-bottom: 1px dashed grey;
+  padding-bottom: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.event:before, .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.event:before {
+  left: -90px;
+  content: attr(data-date);
+  text-align: right;
+}
+.event:after {
+  content: "";
+  left: -39px;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  border-radius: 50%;
+  top: 5px;
+  background: #2E546D;
+}
+
+.header {
+  background-color: #738EA0;
+  text-align: center;
+}
+
+.item {
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px dashed black;
+  position: relative;
+}
+.item::after {
+  content: "Insert a image, here";
+}
+
+.footer {
+  background-color: #738EA0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=main.css.map */
